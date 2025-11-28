@@ -1,0 +1,25 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.12), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.12), transparent 25%),
+    radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.12), transparent 25%),
+    #0b1223;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chart-card {
+  @apply bg-slate-900/80 rounded-2xl shadow-lg p-6 border border-slate-800 transition transform hover:-translate-y-0.5 hover:shadow-xl;
+}

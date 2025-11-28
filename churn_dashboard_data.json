@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "n_clientes": 7043,
+    "tasa_baja_global": 0.2653698707936959,
+    "modelo_final": "Regresión Logística",
+    "metricas_test": {
+      "roc_auc": 0.8888398046965823,
+      "precision": 0.591254752851711,
+      "recall": 0.8315508021390374,
+      "f1": 0.6911111111111111
+    }
+  },
+  "churnByContract": [
+    {
+      "tipo_contrato": "1 Año",
+      "tasa_baja": 0.11269517990495587
+    },
+    {
+      "tipo_contrato": "2 Años",
+      "tasa_baja": 0.02831858407079646
+    },
+    {
+      "tipo_contrato": "Mensual",
+      "tasa_baja": 0.4270967741935484
+    }
+  ],
+  "churnByInternet": [
+    {
+      "internet": "DSL",
+      "tasa_baja": 0.1895910780669145
+    },
+    {
+      "internet": "Fibra",
+      "tasa_baja": 0.4189276485788114
+    },
+    {
+      "internet": "Ninguno",
+      "tasa_baja": 0.07404980340760157
+    }
+  ],
+  "seniorityByChurn": [
+    {
+      "rango_antiguedad": "0-12",
+      "no_baja": 1149,
+      "baja": 1037
+    },
+    {
+      "rango_antiguedad": "13-24",
+      "no_baja": 730,
+      "baja": 294
+    },
+    {
+      "rango_antiguedad": "25-48",
+      "no_baja": 1269,
+      "baja": 325
+    },
+    {
+      "rango_antiguedad": "48+",
+      "no_baja": 2026,
+      "baja": 213
+    }
+  ],
+  "topFeatures": [
+    {
+      "feature": "num__antiguedad_meses",
+      "|coef|": 1.1561404649696514
+    },
+    {
+      "feature": "num__num_tickets_ult_90d",
+      "|coef|": 0.888130801414641
+    },
+    {
+      "feature": "cat__internet_Fibra",
+      "|coef|": 0.770167964144666
+    },
+    {
+      "feature": "cat__tipo_contrato_2 Años",
+      "|coef|": 0.7314386457352096
+    },
+    {
+      "feature": "num__cargo_mensual",
+      "|coef|": 0.6705615599503914
+    },
+    {
+      "feature": "cat__tipo_contrato_Mensual",
+      "|coef|": 0.6462160779187569
+    },
+    {
+      "feature": "cat__internet_DSL",
+      "|coef|": 0.6265726389228984
+    },
+    {
+      "feature": "cat__descuento_reciente_No",
+      "|coef|": 0.61263648362096
+    },
+    {
+      "feature": "cat__distrito_Barranco",
+      "|coef|": 0.5931174577940728
+    },
+    {
+      "feature": "cat__descuento_reciente_Sí",
+      "|coef|": 0.4634270382049163
+    },
+    {
+      "feature": "cat__distrito_Villa María del Triunfo",
+      "|coef|": 0.45683828562281115
+    },
+    {
+      "feature": "num__cargos_acumulados",
+      "|coef|": 0.45591950713562923
+    },
+    {
+      "feature": "cat__metodo_pago_Visa",
+      "|coef|": 0.3831265673559368
+    },
+    {
+      "feature": "cat__streaming_peliculas_Sí",
+      "|coef|": 0.369408637176561
+    },
+    {
+      "feature": "cat__distrito_San Martín de Porres",
+      "|coef|": 0.35596948565555814
+    }
+  ],
+  "probHistogram": [
+    {
+      "bin_start": 0.0,
+      "bin_end": 0.2,
+      "count": 15
+    },
+    {
+      "bin_start": 0.2,
+      "bin_end": 0.4,
+      "count": 9
+    },
+    {
+      "bin_start": 0.4,
+      "bin_end": 0.6,
+      "count": 6
+    },
+    {
+      "bin_start": 0.6,
+      "bin_end": 0.8,
+      "count": 10
+    },
+    {
+      "bin_start": 0.8,
+      "bin_end": 1.0,
+      "count": 10
+    }
+  ]
+}
