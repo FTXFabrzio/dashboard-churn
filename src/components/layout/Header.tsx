@@ -1,8 +1,11 @@
-﻿type HeaderProps = {
+import React from "react";
+
+type HeaderProps = {
   onOpenNewClient: () => void;
+  showNewClientButton?: boolean;
 };
 
-const Header = ({ onOpenNewClient }: HeaderProps) => {
+const Header = ({ onOpenNewClient, showNewClientButton = true }: HeaderProps) => {
   return (
     <header className="relative overflow-hidden bg-header-gradient text-white">
       <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-black/30" />
@@ -14,12 +17,14 @@ const Header = ({ onOpenNewClient }: HeaderProps) => {
             Panel resumen del modelo de baja de clientes residenciales.
           </p>
         </div>
-        <button
-          onClick={onOpenNewClient}
-          className="self-start rounded-xl bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg transition hover:bg-emerald-400"
-        >
-          Simular nuevo cliente
-        </button>
+        {showNewClientButton ? (
+          <button
+            onClick={onOpenNewClient}
+            className="self-start rounded-xl bg-emerald-500 px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg transition hover:bg-emerald-400"
+          >
+            Simular nuevo cliente
+          </button>
+        ) : null}
       </div>
     </header>
   );

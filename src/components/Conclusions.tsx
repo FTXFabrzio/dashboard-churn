@@ -1,9 +1,9 @@
-﻿const Conclusions = () => {
+const Conclusions = () => {
   const bullets = [
     "Los clientes con contrato mensual presentan mayor probabilidad de baja.",
     "La combinación de alta antigüedad y muchos tickets recientes se asocia con mayor churn.",
-    "El modelo de Regresión Logística logra ROC-AUC ≈ 0.89 y Recall ≈ 0.83, permitiendo priorizar clientes en mayor riesgo.",
-    "En internet Fibra se concentra la mayor tasa de cancelación, comparado con DSL o sin servicio fijo."
+    "El modelo de Regresión Logística logra ROC-AUC ~ 0.89 y Recall ~ 0.83, permitiendo priorizar clientes en mayor riesgo.",
+    "En internet Fibra se concentra la mayor tasa de cancelación, comparado con DSL o sin servicio fijo.",
   ];
 
   return (
